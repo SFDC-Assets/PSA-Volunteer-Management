@@ -1,16 +1,16 @@
 ![Public Sector Accelerators logo](/docs/Logo_GPSAccelerators_v01.png)
 
-# [Accelerator Name]
+# Volunteer Management
 
 [Required. Show overview of the Accelerator. This should match the approved content used on the Accelerator listing.]
 
 Accelerator Listing: [insert url to the public listing on the Accelerator site](https://gpsaccelerators.developer.salesforce.com/) (tbd once published)
 
-
 ## Description
 
-[Required. Description of the Accelerator. This should match the approved content used on the Accelerator listing, but could include additional content. This can include images/screenshots which must be stored in the /docs/ folder (no external images or images stored elsewhere in the repository.]
+The Volunteer Management Quick Start Accelerator helps nonprofits stand up a ready-to-use volunteer management solution on Salesforce Nonprofit Cloud. Designed to reduce setup complexity, it delivers a complete foundation for managing both event-based and skill-based volunteer opportunities on the new Volunteer Management (new as of the Summer '25 release).
 
+With this Accelerator, organizations can create, publish, and track volunteer initiatives, job positions, and shifts -- all supported by streamlined Experience Cloud guest access for easy registration. Volunteers can sign up without logging in, while staff can efficiently track attendance, manage locations, and capture valuable engagement data for reporting.
 
 ## Included Assets
 
@@ -37,7 +37,7 @@ This Accelerator includes the following assets:
 
 ## Before You Install
 
-[Required. Pre-requisites, dependencies, license requirements, and other assumptions and caveats should be declared here. Consider content that's specific to the Accelerator and the type of product or technology involved. The PMO may also add assumptions or notes that more broadly apply to the entire program.]
+##[Required. Pre-requisites, dependencies, license requirements, and other assumptions and caveats should be declared here. Consider content that's specific to the Accelerator and the type of product or technology involved. The PMO may also add assumptions or notes that more broadly apply to the entire program.]
 
 **License Requirements** [Required]
 * Example: License Public Sector Solutions - requires Foundations or Advanced for internal; requires Communities for external
