@@ -36,7 +36,7 @@ For System Administrators
 
 ## Included Assets
 
-An extensive list of included asseters can be found [HERE](Included Assets.txt)
+An extensive list of included asseters can be found [HERE](Included%Assets.txt)
 
 
 ### Documentation, including:
