@@ -36,7 +36,7 @@ For System Administrators
 
 ## Included Assets
 
-An extensive list of included asseters can be found [HERE](https://github.com/SFDC-Assets-emu/PSA-Volunteer-Management-Quick-Start-DEV/blob/main/Included%20Assets)
+An extensive list of included asseters can be found [HERE](Included Assets.txt)
 
 
 ### Documentation, including:
