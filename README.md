@@ -14,8 +14,6 @@ With this Accelerator, organizations can create, publish, and track volunteer in
 
 ## Included Assets
 
-##[Required. List of the assets included in the Accelerator and where to find them. This can be as detailed as desired, but at a minimum it should be detailed by asset type (unmanaged package, datapack, documentation, and other assets) and the next level metadata type (Salesforce metadata, datapack contents, separate documentation files, etc.) and their counts.]
-
 This Accelerator includes the following assets:
 <ol>
   <li>An <strong>unmanaged package</strong> (link below; metadata is also found in the /force-app/main/default/ folder) that includes:
@@ -37,26 +35,17 @@ This Accelerator includes the following assets:
 
 ## Before You Install
 
-##[Required. Pre-requisites, dependencies, license requirements, and other assumptions and caveats should be declared here. Consider content that's specific to the Accelerator and the type of product or technology involved. The PMO may also add assumptions or notes that more broadly apply to the entire program.]
-
 **License Requirements** [Required]
 * Nonprofit Cloud with the Volunteer Management permission set (internal users)
 * No license required for volunteer registration (external users) using guest user access. 
 
 
-**Accelerator or Technology-Specific Assumptions** [Optional]
+**Accelerator or Technology-Specific Assumptions** 
 * This accelerator was built and designed primarily for the needs of an event based volunteering use case and the creation of volunteer activities focused on physical labor. The Experience Cloud page is set up to provide an easy registration experience collecting just the volunteers first name, last name, and email address. 
 * The package doesn’t include a volunteer application, or a process to capture volunteer interest or inquiries.
 * It does represent the manual tracking of examinations that could be used to track Background Checks but it doesn’t include any automation or integration with Background check providers. 
 * It also assumes that the required information for each volunteer activity is a named individual, a date, and the number of hours they served. The Volunteer Management data model stores this information on the Job Position Assignment object and this Quick Start package determines this is stored using the fields Assigned Account, Actual Start Time, and Actual Start Duration. 
 * The Volunteer Management product and data model includes fields for rollups but as of Winter ‘26 release doesn’t include any automation to calculate those rollup fields. This Quick Start package includes some sample flows to make those calculations, however these flows will only be appropriate for low data volumes. Organizations should consider alternative approaches, including using standard reports, custom data process engine (DPE), or Declarative Lookup Rollup Summaries (DLRS). 
-
-
-## **General Assumptions** [Optional]
-* Example: You are using this Accelerator in a sandbox or test environment. It is recommended that you not install any Accelerator directly into production environments.
-* Example: If you do not have a Salesforce org licensed to you, you may try Public Sector Solutions for free with one of our [trial environments](https://developer.salesforce.com/free-trials/comparison/public-sector).
-* Example: You are using this Accelerator in conjunction with the Salesforce Lightning Experience (LEX) - not the Classic UI.
-
 
 ## Installation
 
@@ -77,7 +66,6 @@ Review the components included and select the ones that you wish to deploy to yo
 
 
 ## Post-Install Setup & Configuration
-# Volunteer Sign Up Experience Cloud Site Setup Guide
 
 ## Create Experience Cloud Site
 
