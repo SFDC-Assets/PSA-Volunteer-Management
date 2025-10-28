@@ -4,7 +4,7 @@
 
 Streamline volunteer initiatives and volunteer sign-up, attendance, and reporting in Nonprofit Cloud.
 
-Accelerator Listing: [PSA Vounteer Management Quick Start]([https://gpsaccelerators.developer.salesforce.com/](https://gpsaccelerators.developer.salesforce.com/accelerator/a0wDo000000BCFmIAO/volunteer-management-quick-start)
+Accelerator Listing: [PSA Vounteer Management Quick Start](https://gpsaccelerators.developer.salesforce.com/accelerator/a0wDo000000BCFmIAO/volunteer-management-quick-start)
 
 ## Description
 
