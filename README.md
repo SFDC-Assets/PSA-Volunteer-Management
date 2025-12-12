@@ -1,3 +1,5 @@
+![Public Sector Accelerators logo](/docs/Logo_GPSAccelerators_v01.png)
+
 # Volunteer Management Quick Start
 
 https://sfdc.co/volunteer-quick-start
