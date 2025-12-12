@@ -6,31 +6,29 @@ https://sfdc.co/volunteer-quick-start
 
 Streamline volunteer initiatives and volunteer sign-up, attendance, and reporting in Nonprofit Cloud.
 
-The Volunteer Management Quick Start Accelerator helps nonprofits stand up a ready-to-use volunteer management solution on Salesforce Nonprofit Cloud. Designed to reduce setup complexity, it delivers a complete foundation for managing both event-based and skill-based volunteer opportunities on the new Volunteer Management (new as of the Summer '25 release).
+The **Volunteer Management Quick Start** Accelerator helps nonprofits stand up a ready-to-use volunteer management solution on Salesforce Nonprofit Cloud. Designed to reduce setup complexity, it delivers a complete foundation for managing both event-based and skill-based volunteer opportunities on the new Volunteer Management (new as of the Summer '25 release).
 
 With this Accelerator, organizations can create, publish, and track volunteer initiatives, job positions, and shifts \-- all supported by streamlined Experience Cloud guest access for easy registration. Volunteers can sign up without logging in, while staff can efficiently track attendance, manage locations, and capture valuable engagement data for reporting.
 
 Key benefits include:
 
-For Volunteer Coordinators & Staff
-
+**For Volunteer Coordinators & Staff**
 * Create and manage volunteer initiatives and job positions with consistent page layouts and fields.  
 * Track volunteer attendance and mark absences/completions.  
 * Manage physical location and address information for volunteer opportunities.  
 * Access comprehensive reporting on volunteer metrics across initiatives, shifts, and donor engagement.  
 * Send personalized volunteer registration links for specific initiatives, positions, and shifts.
 
-For Volunteers
-
+**For Volunteers**
 * Simple, dynamic registration without authentication for volunteer opportunities based on initiative, job position, or shift.
 
-For System Administrators
-
+**For System Administrators**
 * Preconfigured Experience Cloud guest access and flow for volunteer registration.  
 * Quick actions and flows for volunteer attendance tracking.  
 * Flows that automate populating the standard Volunteer Management data model.  
 * Out-of-the-box reports and report types you can tailor for managing volunteers, initiatives, and shifts.  
-* With its streamlined setup and pre-built flows, the Volunteer Management Quick Start accelerates time-to-value and empowers nonprofits to easily launch their volunteer program on Salesforce Nonprofit Cloud.
+
+With its streamlined setup and pre-built flows, the Volunteer Management Quick Start accelerates time-to-value and empowers nonprofits to easily launch their volunteer program on Salesforce Nonprofit Cloud.
 
 ### Included Assets
 
@@ -42,14 +40,14 @@ An extensive list of included asseters can be in the repo in the Included Assets
 
 This readme file
 
-* Volunteer Management Data Model \-   
-  * [https://developer.salesforce.com/docs/atlas.en-us.nonprofit\_cloud.meta/nonprofit\_cloud/volunteer\_mgmt\_volunteer\_management\_data\_model.htm](https://developer.salesforce.com/docs/atlas.en-us.nonprofit_cloud.meta/nonprofit_cloud/volunteer_mgmt_volunteer_management_data_model.htm)  
-  * [https://developer.salesforce.com/docs/atlas.en-us.nonprofit\_cloud.meta/nonprofit\_cloud/volunteer\_mgmt\_standard\_objects.htm](https://developer.salesforce.com/docs/atlas.en-us.nonprofit_cloud.meta/nonprofit_cloud/volunteer_mgmt_standard_objects.htm)  
-* Release Notes \-   
-  * Summer ‘25 \- [https://help.salesforce.com/s/articleView?id=release-notes.rn\_nonprofit\_volunteer\_management.htm\&release=256\&type=5](https://help.salesforce.com/s/articleView?id=release-notes.rn_nonprofit_volunteer_management.htm&release=256&type=5)  
-  * Winter ‘26 \- [https://help.salesforce.com/s/articleView?id=release-notes.rn\_nonprofit\_volunteer\_management.htm\&release=258\&type=5](https://help.salesforce.com/s/articleView?id=release-notes.rn_nonprofit_volunteer_management.htm&release=258&type=5)  
-* Experience Cloud Related Documentation \- [https://help.salesforce.com/s/articleView?id=experience.networks\_setup\_maintain\_communities.htm\&type=5](https://help.salesforce.com/s/articleView?id=experience.networks_setup_maintain_communities.htm&type=5)  
-* Guest User Security and Sharing Documentation \- [https://help.salesforce.com/s/articleView?id=platform.networks\_secure\_community.htm\&type=5](https://help.salesforce.com/s/articleView?id=platform.networks_secure_community.htm&type=5)
+* Volunteer Management Data Model
+  * [Diagram: Volunteer Management Data Model](https://developer.salesforce.com/docs/atlas.en-us.nonprofit_cloud.meta/nonprofit_cloud/volunteer_mgmt_volunteer_management_data_model.htm)  
+  * [Article:  Volunteer Management Standard Objects](https://developer.salesforce.com/docs/atlas.en-us.nonprofit_cloud.meta/nonprofit_cloud/volunteer_mgmt_standard_objects.htm)  
+* Release Notes
+  * [Summer ‘25 Release Notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_nonprofit_volunteer_management.htm&release=256&type=5)  
+  * [Winter ‘26 Release Notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_nonprofit_volunteer_management.htm&release=258&type=5)  
+* [Experience Cloud Related Documentation](https://help.salesforce.com/s/articleView?id=experience.networks_setup_maintain_communities.htm&type=5)  
+* [Guest User Security and Sharing Documentation](https://help.salesforce.com/s/articleView?id=platform.networks_secure_community.htm&type=5)
 
 ### License Requirements
 
