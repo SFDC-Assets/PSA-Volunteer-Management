@@ -594,8 +594,7 @@ Supporting documentation:
 
 ### Revision History
 
-1.0 Initial release (10 Sept 2025\) \- First release. For detailed release notes and change logs, provide a link to another readme in the /docs/ folder of this repository.  
-2.0 Winter ‘26 release (14 Nov 2025\) \- The following modifications were made.
+**2.0 Winter ‘26 release (14 Nov 2025)** - The following modifications were made.
 
 * Accounts  
   * Replace flows to display Person Competencies and Person Examinations since these related lists are now supported natively.  
@@ -605,7 +604,9 @@ Supporting documentation:
 * Added “Search Volunteers’ to Volunteer Management Quick Start custom application.  
 * Addressed an known issue with the VMQS Sign Up Guest User flow by adding a decision element before the confirmation screen.  
 * Addressed an known issue with VMQS Create Volunteer from J.P. Assignment where the ‘Is Volunteer Added’  a decision element was mapped to Last Name instead of VolunteerID.  
-* The ‘Mark Absent’ quick action on Job Position Assignment was updated to also uncheck the Count Toward Shift Capacity field when used. 
+* The ‘Mark Absent’ quick action on Job Position Assignment was updated to also uncheck the Count Toward Shift Capacity field when used.
+
+**1.0 Initial release (10 Sept 2025)** - First release. For detailed release notes and change logs, provide a link to another readme in the /docs/ folder of this repository.  
 
 ### Acknowledgements
 
