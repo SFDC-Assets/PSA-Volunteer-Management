@@ -1,0 +1,176 @@
+* Advanced Lightning Pages  
+  * App  
+    * Volunteer\_Management\_Quick\_Start App  
+  * File  
+    * Capture20250908101230  
+  * Lightning Page  
+    * VMQS\_HomePage  
+    * Address  
+    * Competency  
+    * Examination  
+    * Home\_Page\_Default  
+    * Job\_Position\_Assignment  
+    * Job\_Position\_Qualification  
+    * Job\_Position\_Record\_Page  
+    * Job\_Position\_Shift\_Record\_Page  
+    * Location\_Record\_Page  
+    * Operating\_Hours  
+    * Person\_Competency  
+    * Person\_Examination  
+    * Person\_Location\_Availability  
+    * Position\_Qualification  
+    * Position\_Record\_Page  
+    * Time\_Slot  
+    * Volunteer\_Donor\_Gift\_Summary  
+    * Volunteer\_Initiative\_Record\_Page  
+    * Volunteer\_Management\_UtilityBar  
+    * Volunteer\_Person\_Account\_Page\_Layout  
+  * Action	  
+    * Assign\_Volunteer  
+    * Assign\_to\_Volunteer Shifts  
+    * Create\_Competency  
+    * Create\_Exam\_or\_B\_Check  
+    * Key\_Position\_Fields  
+    * Mark\_Absent  
+    * Mark\_Complete  
+    * Qualify\_Volunteer  
+    * Record\_Volunteer\_Hours  
+    * Use\_for\_Vol\_Initiative  
+  * List View  
+    * Open Volunteer Initiatives  
+    * Shifts This Week  
+    * Volunteers This Week  
+  * Compact Layout	  
+    * Job\_Position\_Assignment\_Compact\_Layout  
+    * Job\_Position\_Compact\_Layout  
+    * Job\_Position\_Shift\_Compact\_Layout  
+    * Location\_Compact\_Layout  
+    * Position\_Compact\_Layout  
+    * Volunteer\_Initiative\_Compact\_Layout  
+  * Path Assistant  
+    * Job\_Position  
+    * Job\_Position\_Assignment  
+    * Job\_Position\_Shift  
+    * Person\_Competency  
+    * Person\_Examination  
+    * Position  
+    * Volunteer\_Initiatives  
+  * Page Layout  
+    * Address Layout  
+    * Competency Layout  
+    * Examination Layout  
+    * Job Position Assignment Layout  
+    * Job Position Layout  
+    * Job Position Qualification Layout  
+    * Job Position Shift Layout  
+    * Operating Hours Layout  
+    * Person Competency Layout  
+    * Person Examination  
+    * Position Qualification Layout  
+    * Recurrence Schedule Layout  
+    * Volunteer History  
+    * Volunteer Initiative Layout  
+    * Volunteer Layout  
+  * Custom Field  
+    * Address	  
+      * Address Formula  
+    * Competency  
+      * External ID  
+    * Examination  
+      * External ID  
+    * Job Position  
+      * Default Duration  
+      * External ID  
+      * Volunteer Signup URL  
+    * Job Position Assignment  
+      * External ID  
+      * Mass Quick Update Field  
+      * Scheduled Duration  
+      * What motivated you to Volunteer?  
+      * Would you recommend this activity?  
+    * Job Position Qualification  
+      * External ID  
+    * Job Position Shift  
+      * Default Duration  
+      * External ID  
+      * Start and End Date/Time  
+      * Volunteer Signup URL  
+    * Location  
+      * Address Formula  
+    * Person Competency  
+      * Competency Name  
+      * External ID  
+    * Person Examination  
+      * Examination Name  
+      * External ID  
+    * Position  
+      * External ID  
+    * Position Qualification  
+      * External ID  
+    * Volunteer Initiative  
+      * Default Duration  
+      * External ID  
+      * Volunteer Signup URL	  
+  * Permission Set  
+    * VMQS\_Custom\_Fields  
+  * Flow Definition  
+    * VMQS\_Competency\_Related\_Records  
+    * VMQS\_Person\_Competency  
+    * VMQS\_Person\_Examination  
+    * VMQS Proficiency Level Mapping \- Job Position Qualification  
+    * VMQS Proficiency Level Mapping \- Position Qualification  
+    * VMQS Proficiency Level Mapping \- Person Competency  
+    * VMQS\_Volunteer\_Job\_Position\_Location\_and\_Address  
+  * Custom Metadata Types  
+    * Proficiency Level Mapping  
+      * Proficiency\_Level\_Mapping.Passed  
+      * Proficiency\_Level\_Mapping.Advanced  
+      * Proficiency\_Level\_Mapping.Immediate  
+      * Proficiency\_Level\_Mapping.Beginner  
+* Analytics  
+  * Custom Report Type  
+    * Volunteer Initiatives  
+    * Volunteer Initiatives, Job Positions, and J. P. Shifts  
+    * Volunteer J.P. Assignments  
+  * Report Folder  
+    * Volunteer Management Report  
+  * Report	  
+    * Available Job Positions  
+    * J.P. Assignments by Account/Org  
+    * J.P. Assignments by Job Position  
+    * J.P. Assignments by Month  
+    * J.P. Assignments by Volunteer Initiative  
+    * J.P. Assignments for Dashboard  
+    * Job Positions with Shift Summary  
+    * Shift Capacity  
+    * Unique Volunteers  
+    * Upcoming J.P. Shifts Needing Volunteers  
+    * Upcoming J.P. Shifts with Volunteers  
+    * Upcoming Volunteers  
+    * Volunteers Active Last Month  
+    * Volunteers Daily Shift Roster  
+* Volunteer Registration  
+  * Site URLs  
+    * Volunteer\_Signup  
+  * Custom Metadata Type	  
+    * Site URLs  
+  * Custom Field   
+    * Base URL  
+  * Page Layouts  
+    * Volunteer Signup Site URL Layout  
+  * Flow Definition  
+    * VMQS\_Sign\_Up\_Guest\_User  
+    * VMQS\_Create\_Volunteer\_from\_JP\_Assignment  
+* Automation   
+  * Validation Rule  
+    * Job Position Assignment   
+      * Absent  
+      * ActualDuration\_and\_ActualStartTime  
+    * Position   
+      * As\_Needed\_for\_Type\_and\_Schedule\_Type  
+    * Volunteer Initiative   
+      * Start\_Date\_and\_End\_Date on Volunteer Initiative  
+  * Rollups  
+    * VMQS\_Rollup\_Donor\_Gift\_Summary  
+    * VMQS\_Rollup\_Jop\_Position\_Shift  
+    * VMQS\_Rollup\_Volunteer\_Initiative
