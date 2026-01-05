@@ -246,9 +246,9 @@ Supporting documentation:
 3. Install the unmanaged package  
    1. Login into your sandbox or scratch org.  
    2. Choose the appropriate URL:   
-      1. For Sandboxes and Scratch Orgs: https://test.salesforce.com/packaging/installPackage.apexp?p0=04tfh000000ZNkv   
+      1. For Sandboxes and Scratch Orgs: https://test.salesforce.com/packaging/installPackage.apexp?p0=04tfh000000ZTgf
       2. For Production Environments:   
-         https://login.salesforce.com/packaging/installPackage.apexp?p0=04tfh000000ZNkv  
+         https://login.salesforce.com/packaging/installPackage.apexp?p0=04tfh000000ZTgf
    3. Paste the URL into your browser navigation bar and press Enter.  
    4. Select Installation Scope: Choose how to install the package:   
       1. Recommended: Install for Admins Only: The package components are only accessible by users with the Administrator profile.   
