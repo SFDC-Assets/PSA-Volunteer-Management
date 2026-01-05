@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>PARENTGROUPVAL(JobPositionAssignment.ActualDuration:SUM, JobPositionShift.Name)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>VolunteerInitiative.JobPosition.JobPositionShift$Name</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Volunteers</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>VolunteerInitiative.JobPosition.JobPositionShift$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>VolunteerInitiative.JobPosition.JobPositionShift$MaximumAttendeesCount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>VolunteerInitiative.JobPosition.JobPositionShift$PositionAssignmentCount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>VolunteerInitiative.JobPosition.JobPositionShift$RemainingCapacity</field>
+    </columns>
+    <description>Lists all Job Positions (grouped by Volunteer Initiative), their J.P. Shifts and details on the shift (Max. Attendees Count, Positions Assignment Count, Remaining Capacity)</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VolunteerInitiative$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VolunteerInitiative.JobPosition$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VolunteerInitiative.JobPosition.JobPositionShift$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Job Positions with Shift Summary</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Volunteer_Initiatives__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VolunteerInitiative$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

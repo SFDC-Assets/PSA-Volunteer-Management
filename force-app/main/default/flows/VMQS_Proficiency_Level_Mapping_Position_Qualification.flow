@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>As of Winter &apos;25 release Examinations were not supported in the Search for Volunteers interface.</description>
+        <name>Qualification_Type_of_Record</name>
+        <label>Qualification Type of Record?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Examination</defaultConnectorLabel>
+        <rules>
+            <name>Competency</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Competency.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Mapping</targetReference>
+            </connector>
+            <label>Competency</label>
+        </rules>
+    </decisions>
+    <description>This flow was created to translate the Proficiency Level picklist field on Job Position Qualification and Position Qualification to the numbers stored in the Qualification Level field. It uses a Custom Metadata Type to pair the picklist values to number values. 
+
+For a Job Position Qualification and Position Qualification to show up in a Search for Volunteers interface both Proficiency Level and Qualification Level must be populated. Further having them as numbers allows you to identify volunteers that exceed your requirements (ie finding volunteers that are Advanced when you only need Intermediate).
+
+As of Winter &apos;25 release Examinations were not supported in the Search for Volunteers interface.</description>
+    <environments>Default</environments>
+    <interviewLabel>VMQS Proficiency Level Mapping - Position Qualification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>VMQS Proficiency Level Mapping - Position Qualification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Competency</name>
+        <label>Get Competency</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Qualification_Type_of_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.QualificationReferenceRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Competency</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Calls a Custom Metadata Type to select the record associated with the picklist value.</description>
+        <name>Get_Mapping</name>
+        <label>Get Mapping</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Qualification_Level</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Proficiency_Level__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ProficiencyLevel</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Proficiency_Level_Mapping__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Qualification_Level</name>
+        <label>Update Qualification Level</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>QualificationLevel</field>
+            <value>
+                <elementReference>Get_Mapping.Qualification_Level__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Competency</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ProficiencyLevel</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>PositionQualification</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

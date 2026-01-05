@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Custom Metadata Type was created to translate the Proficiency Level picklist field on Job Position Qualification and Position Qualification to the numbers stored in the Qualification Level field.
+
+For a Job Postion Qualification and Position Qualification to show up in a Search for Volunteers interface both Proficiency Level and Qualification Level must be populated. Further having them as numbers allows you to identify volunteers that exceed your requirements (ie finding volunteers that are Advanced when you only need Intermediate).</description>
+    <fields>
+        <fullName>Proficiency_Level__c</fullName>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Proficiency Level</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Beginner</fullName>
+                    <default>true</default>
+                    <label>Beginner</label>
+                </value>
+                <value>
+                    <fullName>Immediate</fullName>
+                    <default>false</default>
+                    <label>Immediate</label>
+                </value>
+                <value>
+                    <fullName>Advanced</fullName>
+                    <default>false</default>
+                    <label>Advanced</label>
+                </value>
+                <value>
+                    <fullName>Passed</fullName>
+                    <default>false</default>
+                    <label>Passed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Qualification_Level__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Qualification Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Proficiency Level Mapping</label>
+    <pluralLabel>Proficiency Level Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
