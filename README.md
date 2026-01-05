@@ -594,7 +594,7 @@ Supporting documentation:
 
 ### Revision History
 
-**2.0 Winter ‘26 release (14 Nov 2025)** - The following modifications were made.
+**2.1 Winter ‘26 release (10 Dec 2025)** - The following modifications were made.
 
 * Accounts  
   * Replace flows to display Person Competencies and Person Examinations since these related lists are now supported natively.  
